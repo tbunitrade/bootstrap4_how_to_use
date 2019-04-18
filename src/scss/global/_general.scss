@@ -1,0 +1,82 @@
+/*general css style */
+html {
+  font-size: 100%; /* This means 16px */
+}
+body {  
+  font-family: 'PT Sans', sans-serif;
+  position: relative;  
+  transition: 0.27s;
+  line-height: 1;  
+}
+
+.clear {
+  clear: both;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  //  padding: 0;
+  //  margin: 0;
+ 
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  overflow: hidden;
+
+  @media (min-width: $screen-md-min) {
+    padding-right: 102px;
+    padding-left: 102px;
+  }
+}
+
+* {
+  border: 0px solid red;
+  outline: 0px solid red!important;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.h3Style {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  color: $h3text;
+  text-transform: capitalize;
+  text-align: center;
+
+  @media (min-width:$screen-md-min){
+    text-align: left;
+  }
+
+  span {
+    color: $h3span;
+  }  
+}
+
+.detailsPage {
+  .titleOfRoW {
+    .h3Style {
+      margin-left: 1.6em;
+      margin-top: 1.41em;
+      margin-bottom: 0;
+      text-transform: initial;
+    }
+  }  
+}
+
+.indentStyle {
+  text-indent: 2em; /* Отступ первой строки */
+  text-align: justify; /* Выравнивание по ширине */
+  font-size: 14px;
+  line-height: 24px;
+}

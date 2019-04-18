@@ -1,0 +1,295 @@
+.headerContainer {
+    padding: 0;
+    margin: 0;
+}
+
+.titleOfRoW {
+    max-width: 1170px;
+    margin: auto;    
+}
+
+.firstLine {
+
+    .col-6 {
+        padding: 0;
+    }    
+
+    .logo {
+        background: $headerorange;
+        padding: 0;
+
+        .logoHref {
+            background-image: url("../img/logo-small.png");
+            background-color: $headerorange;            
+
+            background-repeat: no-repeat;
+            width: 159px;
+            height: 60px;
+            display: block;
+
+            @media (min-width:$screen-md-min) {
+                display: block;
+                background-image: url("../img/logo-big.png");
+                position: absolute;             
+
+                bottom: 1.41em;
+                right: 0.3em;
+
+                width: 201px;
+                height: 96px;
+            }
+        }
+    }
+
+    .data {
+        padding: 0;
+
+        .listOfDataItems    {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 18px;
+
+            @media (min-width:$screen-md-min) {
+                width: 56%;   
+                padding-top: 0px;
+            }
+
+
+            .item{
+                display: inline-block;
+                vertical-align: top;
+                list-style-type: none;
+
+                width: 49%;
+
+                @media (min-width:$screen-md-min) {
+
+                }
+                
+
+                img {
+                    display: block;
+                    margin: auto;
+                }                
+
+                p {
+                    display: block;                    
+                    text-align: center;
+                    display: block;
+                    margin: auto;
+                    padding-top: 3px;
+                    line-height: 23px;                  
+                                      
+                    @media (min-width:$screen-md-min) {
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 220px;
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-top: 0px;
+                    }
+
+                    span {
+                        color: $headerorange;
+                    }
+                }
+
+                &:nth-child(1),
+                &:nth-child(2) {
+
+                    p {
+                        width: 100%;
+                        max-width: 140px;
+                        
+                        @media (min-width:$screen-sm-min) {
+                            max-width: 180px;
+                        }
+
+                        @media (min-width:$screen-md-min) {
+                            max-width: 220px; 
+                            margin: auto;
+                            display: block;
+                        }                       
+                    }
+                }
+
+                &:nth-child(1) {
+                    position: relative;
+                    left: 5.6em;
+
+                    p{
+                        padding-top: 0.25em;
+                    }
+                }
+
+                &:nth-child(2) {
+                    position: relative;                    
+                    left: 2.4em;
+
+                    p{
+                        padding-top: 0.25em;
+                    }
+                }
+
+                .callMeHeader {
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: inline-block;
+                    color: $h3span;
+                }                
+            }
+        }/*listOfDataItems*/
+
+        .listOfContactsItems {            
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+
+            @media (min-width:$screen-md-min) {
+                width: 40%;  
+                width: 27%; 
+            }
+
+            .item {
+                position: relative;
+                height: 66px;
+
+                a {
+                    width: 100%;
+                    max-width: 222px;
+                    position: relative;                        
+                    text-align: right;
+                    display: block;                    
+                    font-size: 18px;
+                    line-height: 66px;
+                    font-weight: bold;
+                    color: $h3span;                      
+                    margin: auto;
+
+                    @media (min-width:$screen-md-min) {                        
+                        max-width: 218px;
+                        letter-spacing: 0.06em;
+                    }
+
+                    &:before {
+                        width: 48px;
+                        height: 48px;
+                        content: "";
+                        display: block;
+                        background: url(../img/header-email-small.png);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top:19%;
+                        left: 0;
+                        left:-10%;
+
+                        @media (min-width:$screen-md-min) {
+                            top:12%;
+                        }
+                    }
+                }
+               
+                &:first-child {  
+                    display: block;
+
+                    @media (min-width:$screen-md-min) {
+                        display: none;
+                    }                          
+                }
+
+                &:nth-child(2) {
+                    display: block;
+                    width: 100%;                                       
+                    text-align: center;                   
+                    
+                    img {
+                        display: inline-block;
+                    }    
+                }
+
+                &:nth-child(3) {
+                    display: block;
+                    width: 100%;                 
+                    text-align: center;                 
+
+                    @media (min-width:$screen-md-min){
+                        float: right;
+                    }
+                    
+                    a {    
+                   
+                        border: 2px solid $headerlime;
+                        height: 40px;
+                        line-height: 40px;
+                        color: $h3span;
+                        font-size: 18px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        position: relative;
+                        position: relative;
+                        font-family: 'PT Sans';
+                        width: 100%;
+                        max-width: 234px;
+                        display: block;
+                        margin: auto;
+                        text-align: center;
+
+                        @media (min-width:$screen-md-min) {
+                            line-height: 32px;
+                            letter-spacing: 0.001em;
+                        }
+
+                        &:before {
+                            display: block;
+                            width: 10px;
+                            height:10px;
+                            content: "";
+                            background: $white;
+                            position: absolute;
+                            left: -2%;
+                            top: 40%;
+                        }
+    
+                        &:after {
+                            display: block;
+                            width: 10px;height:10px;
+                            content: "";
+                            background: $white;
+                            position: absolute;
+                            right: -2%;
+                            top:40%;
+                        }                             
+                    }                                  
+                }
+            }/*end of item*/
+        }/*listOfContactsItems*/
+    }
+}
+
+.secondLine {
+    display: none;
+
+    @media (min-width:$screen-md-min){        
+        display: flex;
+    }
+
+    .email{
+        background: $headerlime;        
+        min-height: 70px;
+        position: relative;       
+
+        a {
+            color:$h3span;
+            text-align: right;
+            position: absolute;            
+            right: 10px;
+            bottom: 30px;
+        }       
+    }    
+}/*end of second line*/

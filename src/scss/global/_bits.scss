@@ -1,0 +1,67 @@
+// SCSS Bits and Variables.
+//-------------------------------- VARIABLES
+//basic colors
+$white:     #ffffff;
+$black:     #000000;
+$green:     #00ff00;
+$orange:    #ffa500;
+$ccc :      #ccc;
+$blue:      #0000ff;
+$red:       #ff0000;
+$pgeneral:  #3a4249;
+$eee : #eee;
+$text :#102c3a;
+$span :#222222;
+$f5color:#f5f5f5;
+
+$h3text: #8cd6ad;
+$h3span :#3d3e52;
+$textbaklazan :#3d3e52;
+
+
+$headerorange: #ff7c00;
+$headerlime: #8cd6ad;
+$headermenu:#3d3e52;
+
+$greenblock:#8cd6ad;
+ 
+//header style
+$title:#ff3d42;
+
+
+  // // Defining values
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1600px;
+$screen-md-max: ($screen-lg-min - 1);
+
+
+// // Defining values
+// $screen-sm-min: 768px;
+// $screen-xs-max: ($screen-sm-min - 1);
+// $screen-md-min: 992px;
+// $screen-sm-max: ($screen-md-min - 1);
+// $screen-lg-min: 1200px;
+// $screen-md-max: ($screen-lg-min - 1);
+
+// // Usage
+// @media (max-width: $screen-xs-max) { ... }
+// @media (min-width: $screen-sm-min) { ... }
+// @media (max-width: $screen-sm-max) { ... }
+// @media (min-width: $screen-md-min) { ... }
+// @media (max-width: $screen-md-max) { ... }
+// @media (min-width: $screen-lg-min) { ... }
+
+// added code for bootstrap 3 , for a row with no padding between columns.
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 ;
+    padding-right: 0 ;
+    margin-right: 0 ;
+    margin-left:  0 ;
+  }
+}
+
+//--------------------------------- FONTS

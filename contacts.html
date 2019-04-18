@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+    <link rel="icon" href="public/img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="public/img/favicon32.png" type="image/png" sizes="32x32">
+
+</head>
+
+<body>
+    <div class="container-fluid contactPage">
+        <!--  row -->
+        <div class="row headerContainer firstLine">    
+            <div class="col-6 col-md-3 logo">
+                <a class="logoHref" href="index.html"></a>
+            </div>
+            <div class="col-6 d-md-none mobileMenu">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#">Disabled</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </div>
+                          </nav>
+            </div>
+
+            <div class="col-md-8 data">
+                <ul class="listOfDataItems">
+                    <li class="item">
+                        <img src="public/img/header-icons.png">
+                        <p>
+                            Член торгово-промышленной
+                            палаты <span>Москвы</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <img src="public/img/header-icons.png">
+                        <p>
+                            Член палаты <span>cудебных
+                            экспертов</span>
+                        </p>
+                    </li>
+                </ul> 
+                <ul class="listOfContactsItems">
+                    <li class="item">
+                        <a href="mailto:expert@naexpertizu.ru">expert@naexpertizu.ru</a>
+                    </li>
+                    <li class="item">
+                        <a  href="tel:70000000000" class="headerPhonesSmall">+7 (000) 000-00-00</a>
+                            <!-- <img src="public/img/header-phones.png"> -->                                
+                    </li>
+                    <li class="item">
+                        <a id="callMeHeader" class="callMeHeader" href="">Обратный звонок</a>
+                    </li>
+
+                </ul>                    
+            </div>
+        </div>
+        <div class="row headerContainer secondLine">
+            <div class="col-md-3 email">
+                    <a href="mailto:Alex_info@gmail.com">Alex_info@gmail.com</a>
+            </div>
+
+            <div class="col-md-9 menu">
+
+                <ul class="menuList">
+                    <li class="menu-item"><a href="index.html" title="">О компании</a></li>
+                    <li class="menu-item"><a href="details.html" title="">Товарная экспертиза</a></li>
+                    <li class="menu-item"><a href="details.html" title="">Сертификация продукта</a></li>
+                    <li class="menu-item"><a href="details.html" title="">Оценочная экспертиза</a></li>
+                    <li class="menu-item"><a href="details.html" title="">Консалтинг</a></li>
+                    <li class="menu-item"><a href="details.html" title="">Юридическим лицам</a></li>
+                    <li class="menu-item"><a href="contacts.html" title="">Контакты</a></li>
+                </ul>
+
+            </div>   
+        </div>
+    <!--  End of HEADERr -->  
+        <!--  row -->
+            <div class="row mapForOrientation">                
+                <div id="map" style="width: 100%; height: 500px;"></div>
+                <script>// <![CDATA[
+                      var map;
+                      function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                          center: {lat: 50.437, lng: 30.524},
+                          zoom: 16
+                        });
+                var uluru = {lat: 50.437, lng: 30.528};
+                var marker = new google.maps.Marker({position: uluru, map: map});
+                      }
+                    
+                // ]]></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMRw3fHXfN4DNbAUD4eHkazn_VSIHlu7k&amp;callback=initMap" async="" defer="defer">// <![CDATA[
+                    
+                // ]]></script>
+            </div>
+        <!--  row -->
+            <div class="row contacsInfo">
+                <div class="col-sm-12 col-md-6 left">
+                    <div class="bigTitle">
+
+                        <h3 class="h3Style">Наши <span>контакты</span></h3>
+
+                        <ul class="listOfContacs">
+
+                            <li class="itemAdress">
+                                <p class="pText">127051, г.Москва, Большой
+                                    Сухаревский пер., дом 17 строение 2
+                                </p>                                
+                            </li>
+
+                            <li class="itemPhone">
+                                <a class="phone" href="tel:4955064266">(495)-506-42-66</a>
+                                <a class="phone" href="tel:4952072126">(495)-207-21-26</a>
+                                <a class="phone" href="tel:4952087363">(495)-208-73-63<span>(тел./факс)</span></pan></a>
+                            </li>
+
+                            <li class="itemEmail">
+                                <a class="email" href="mailto:expert@naexpertizu.ru">expert@naexpertizu.ru</a>
+                            </li>
+
+                            <li class="itemOrganizer">
+                                <p class="pText">с Пн по Пт с 10-00 до 17-00</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 right">
+                    <div class="bigTitle">
+
+                        <h3 class="h3Style">Обратная <span>связь</span></h3>
+
+                        <form action="" method="POST">
+                            <fieldset>
+                                <input id="name" type="text" placeholder="Имя ..." >
+                        
+                                <input id="phone" type="text" placeholder="Телефон / email ..." ></inpput>    
+                            </fieldset>
+                       
+                            <textarea id="textarea" placeholder="Ваш текст"></textarea>                        
+
+                            <button>
+                                <input id="submit" type="submit" value="Отправить">
+                            </button>
+                           
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        <!--  row -->        
+            <div class="row footer">
+                <div class="col-sm-12 col-md-4">
+                    <div class="slogan">iea</div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                        О компании
+                        Товарная экспертиза
+                        Сертификация продукции
+                        оценочная экспертиза
+                </div>
+            </div>
+        </div> 
+
+    <!--  End of HEADERr -->    
+</div>
+
+    
+    <!--  enque scripts -->              
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>    
+</body>
+
+</html>
