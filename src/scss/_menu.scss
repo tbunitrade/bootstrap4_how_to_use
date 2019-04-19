@@ -1,86 +1,81 @@
-.firstLine {
+.col-6 {
+    padding: 0;
+}
 
-    .col-6 {
-        padding: 0;
-    }
+.mobileMenu {
+    background: $h3span;
 
-    .mobileMenu {
-        background: $h3span;
+    .navbar-toggler {
+        border:none;
+        width: 35px;
+        height: 32px;
+        position: relative;
+        margin: auto;
+        margin-top: 7px;
 
-        .navbar-toggler {
-            border:none;
+        .navbar-toggler-icon {
+            background: $headerorange;
             width: 35px;
-            height: 32px;
-            position: relative;
-            margin: auto;
-            margin-top: 7px;
-
-            .navbar-toggler-icon {
+            height: 4px;                
+            display: block;
+            margin-left: -12px;         
+                
+            &:before {
                 background: $headerorange;
+                height: 4px;
                 width: 35px;
-                height: 4px;                
+                position: absolute;
+                top:0;
+                left: 35%;
+                left: 0;
+                
+                content: "";
                 display: block;
-                margin-left: -12px;         
-                    
-                &:before {
-                    background: $headerorange;
-                    height: 4px;
-                    width: 35px;
-                    position: absolute;
-                    top:0;
-                    left: 35%;
-                    left: 0;
-                    
-                    content: "";
-                    display: block;
-                }
+            }
 
-                &:after {
-                    background: $headerorange;
-                    height: 4px;
-                    width: 35px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 35%;
-                    left: 0;
-                    content: "";
-                    display: block;
-                }
+            &:after {
+                background: $headerorange;
+                height: 4px;
+                width: 35px;
+                position: absolute;
+                bottom: 0;
+                left: 35%;
+                left: 0;
+                content: "";
+                display: block;
             }
         }
     }
 }
 
-.secondLine{
-    
-    .menu {
-        background: $headermenu;        
-        min-height: 70px;
 
-        .menuList {
-            margin: 0;
-            padding: 0;
+.menu {
+    background: $headermenu;        
+    min-height: 70px;
 
-            .menu-item {
-                display: inline-block;
-                vertical-align: top;
-                list-style-type: none;
-                line-height: 70px;                
+    .menuList {
+        margin: 0;
+        padding: 0;
 
-                a {
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    color:$white; 
-                    border: 2px solid transparent;                  
-                    padding: 0px 12px;
-                    letter-spacing: 0.011em;                    
+        .menu-item {
+            display: inline-block;
+            vertical-align: top;
+            list-style-type: none;
+            line-height: 70px;                
 
-                    &:hover {
-                        border: 2px solid $headerorange;
-                        border-radius: 9px;
-                    }
+            a {
+                text-transform: uppercase;
+                font-size: 12px;
+                color:$white; 
+                border: 2px solid transparent;                  
+                padding: 0px 12px;
+                letter-spacing: 0.011em;                    
+
+                &:hover {
+                    border: 2px solid $headerorange;
+                    border-radius: 9px;
                 }
-            }/*end of menu item*/
-        }/*end of menu list*/
-    }/*end of menu*/
-}
+            }
+        }/*end of menu item*/
+    }/*end of menu list*/
+}/*end of menu*/

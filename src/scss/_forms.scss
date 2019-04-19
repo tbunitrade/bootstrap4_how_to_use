@@ -1,0 +1,117 @@
+/*this is form style*/
+fieldset {
+    border: 2px solid $formborder;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 168px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+
+    input {         
+        color: $h3span;
+        border: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 150px;
+        font-size: 1em;
+        line-height: 2em;
+        padding-left: 1em;
+        font-weight: 400;            
+    }
+}
+
+.fieldsetPhone {
+    max-width: 268px;
+    /*max-width: 268px;*/
+}
+
+textarea{    
+    border: 1px solid $formborder;
+
+    display: block;
+    width: 94%;
+    max-width: 450px;
+    height: 109px;
+    /* margin: auto; */
+    padding: 1em;
+    margin-top: 0.5em;
+    
+    position: relative;
+    top: 2em;
+    margin-bottom: 3em;
+
+
+
+    @media (min-width:$screen-md-min) { 
+        width: 100%;        
+    }
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    width: 100%;
+    background: none;
+    background-color: none;
+
+    input {
+        background: none;
+        background-color: none;
+    }
+}
+
+#phone {
+    position: relative;
+
+    @media (min-width:$screen-md-min) {
+        /*right: -10em;*/
+    }
+    
+}
+
+#submit {
+    border: 2px solid #8cd6ad;
+    height: 40px;
+    line-height: 40px;
+    color: #3d3e52;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    position: relative;
+    position: relative;
+    font-family: 'PT Sans';
+    width: 100%;
+    max-width: 234px;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    &:before {
+        display: block;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background: #fff;
+        position: absolute;
+        left: -2%;
+        top: 40%;
+    }
+
+    &:after {
+        display: block;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background: #fff;
+        position: absolute;
+        right: -2%;
+        top: 40%;
+    }
+}
+
+form {
+    margin-bottom: 2em;
+}

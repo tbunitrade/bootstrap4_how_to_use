@@ -8,6 +8,7 @@
     margin: auto;    
 }
 
+.footer,
 .firstLine {
 
     .col-6 {
@@ -118,7 +119,11 @@
 
                 &:nth-child(1) {
                     position: relative;
-                    left: 5.6em;
+
+                    @media (min-width:$screen-md-min) {
+                        left: 5.6em;
+                    }
+                  
 
                     p{
                         padding-top: 0.25em;
@@ -126,8 +131,11 @@
                 }
 
                 &:nth-child(2) {
-                    position: relative;                    
-                    left: 2.4em;
+                    position: relative;   
+
+                    @media (min-width:$screen-md-min) {
+                        left: 2.4em;
+                    }                                                    
 
                     p{
                         padding-top: 0.25em;

@@ -1,0 +1,126 @@
+.footer {
+    height: 170px;    
+
+    @media (min-width:$screen-md-min) {
+        
+    }
+
+    .logo {
+        background: $headerorange;        
+        
+        @media (min-width:$screen-md-min) {
+            display: block;
+        }
+
+
+        .slogan {
+            display: block;
+            background-image: url(../img/logo-small.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            top:0;
+            right: .3em;
+            width: 201px;
+            height: 96px;
+        }
+    }
+
+    .data {
+        background: $h3span;
+    }
+
+    .itemEmail {
+        list-style-type: none;
+        
+        a {
+            color: white;
+            font-size: 18px;
+        }  
+        
+        .email {
+            position: relative;
+            padding: 20px;
+            top:3em;
+
+            &:before {
+                content: "";
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                background: url(../img/email-white.png);
+                background-repeat: no-repeat;
+                width: 56px;
+                height: 56px;
+                position: absolute;
+                left: -2em;
+                top:0em;
+            }
+        }
+    }
+
+    .socialItem {
+        list-style-type: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 45px;
+        height: 45px;
+        margin:0 1em;
+
+        a {
+            color: white;
+            font-size: 18px;
+
+            &:hover {
+                color:$headerorange;
+            }
+        }  
+    }
+
+    .fb,
+    .vk {
+        a {
+            display: block;
+            position: relative;
+            background: url(../img/social-link.png);
+            background-repeat: no-repeat;
+            height: 45px;
+            width: 45px;
+           
+
+            position: relative;
+            left: -2em;
+            top:2em;
+
+            &:hover {
+                background: url(../img/social-hover.png);
+                background-repeat: no-repeat;
+            }                                 
+        }
+    }
+
+    .footer-menu {
+        display: none;
+
+        @media (min-width:$screen-md-min) {
+            display: block;
+        }
+        
+        .menu-item{
+            list-style-type: none;
+            padding: 6px 0px;
+         
+            a {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 400;
+                color: $white;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $headerorange;
+                    
+                }
+            }
+        }
+    }
+}

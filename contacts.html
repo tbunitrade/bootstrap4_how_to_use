@@ -14,48 +14,48 @@
 </head>
 
 <body>
-    <div class="container-fluid contactPage">
+    <div class="container-fluid contactPage someStyle">
         <!--  row -->
         <div class="row headerContainer firstLine">    
             <div class="col-6 col-md-3 logo">
                 <a class="logoHref" href="index.html"></a>
             </div>
             <div class="col-6 d-md-none mobileMenu">
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                          
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                  </div>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link disabled" href="#">Disabled</a>
-                                </li>
-                              </ul>
-                              <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                              </form>
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                          </nav>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
 
             <div class="col-md-8 data">
@@ -117,10 +117,13 @@
                       var map;
                       function initMap() {
                         map = new google.maps.Map(document.getElementById('map'), {
-                          center: {lat: 50.437, lng: 30.524},
+                          center: {lat: 55.771046, lng: 37.6271533},
                           zoom: 16
                         });
-                var uluru = {lat: 50.437, lng: 30.528};
+
+                        //55.771046,37.6271533
+
+                var uluru = {lat: 55.771046, lng: 37.6271533};
                 var marker = new google.maps.Marker({position: uluru, map: map});
                       }
                     
@@ -163,43 +166,128 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 right">
-                    <div class="bigTitle">
+                    <h3 class="h3Style">Обратная <span>связь</span></h3>
 
-                        <h3 class="h3Style">Обратная <span>связь</span></h3>
-
-                        <form action="" method="POST">
-                            <fieldset>
-                                <input id="name" type="text" placeholder="Имя ..." >
+                    <form action="" method="POST">
                         
-                                <input id="phone" type="text" placeholder="Телефон / email ..." ></inpput>    
-                            </fieldset>
-                       
-                            <textarea id="textarea" placeholder="Ваш текст"></textarea>                        
+                        <fieldset>
+                            <input id="name" type="text" placeholder="Имя ..." >
+                        </fieldset>
 
-                            <button>
-                                <input id="submit" type="submit" value="Отправить">
-                            </button>
-                           
-                        </form>
+                        <fieldset class="fieldsetPhone">
+                            <input id="phone" type="text" placeholder="Телефон / email ..." ></inpput>    
+                        </fieldset>
+                    
+                        <textarea id="textarea" placeholder="Ваш текст"></textarea>                        
 
-                    </div>
+                        <button>
+                            <input id="submit" type="submit" value="Отправить">
+                        </button>
+                        
+                    </form>                    
                 </div>
             </div>
             <div class="clear"></div>
         <!--  row -->        
             <div class="row footer">
-                <div class="col-sm-12 col-md-4">
-                    <div class="slogan">iea</div>
+                <div class="col-6 col-md-3 logo">
+                    <a class="logoHref" href="index.html"></a>
                 </div>
-                <div class="col-sm-12 col-md-8">
-                        О компании
-                        Товарная экспертиза
-                        Сертификация продукции
-                        оценочная экспертиза
+                <div class="col-6 d-md-none mobileMenu">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-sm-12 col-md-3 logo">
+                    <div class="slogan"></div>
+                </div>
+
+                <div class="col-sm-12 col-md-9 data">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="footer-menu">
+                                <li class="menu-item">
+                                    <a href="">О компании</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html" title="title">Товарная экспертиза</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html" title="title">Сертификация продукции</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html" title="title">оценочная экспертиза</a>
+                                </li>                               
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-menu">
+                                <li class="menu-item">
+                                    <a href="">О компании</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html" title="title">Товарная экспертиза</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html" title="title">Сертификация продукции</a>
+                                </li>                                   
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="widgetInFooter">
+                                <li class="itemEmail">
+                                    <a class="email" href="mailto:expert@naexpertizu.ru">expert@naexpertizu.ru</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="widgetInFooter">
+                                <li class="socialItem fb">
+                                    <a class="link" href="mailto:expert@naexpertizu.ru"></a>
+                                </li>
+                                <li class="socialItem vk">
+                                    <a class="link" href="mailto:expert@naexpertizu.ru"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                        
                 </div>
             </div>
         </div> 
-
     <!--  End of HEADERr -->    
 </div>
 
