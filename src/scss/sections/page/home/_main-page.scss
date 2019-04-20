@@ -23,8 +23,14 @@
                 background: $white;
                 width: 250px;
                 height: 67px;
-                left: 2em;
-                top:1em;
+                margin:auto;
+              
+
+                @media (min-width:$screen-md-min) {
+                    margin:unset;
+                    left: 2em;
+                    top:1em;
+                }
             }
 
             .description {
@@ -32,7 +38,7 @@
                 padding-bottom: 50px; 
                 width: 100%;
                 max-width: 430px;
-                padding: 3em;
+                padding: 1em;
                 height: 260px;
                 margin: auto;
 
@@ -46,6 +52,10 @@
                 padding-top: 4em;
                 border: 2px solid $bordercolor;
                 border-radius: 11px;
+
+                @media (min-width:$screen-md-min) {
+                    padding: 3em;
+                }
             }
         }/*alexblock*/
 
@@ -296,15 +306,20 @@
                     top: -5px;
                     left: -7px;
                     height: 84px;
-                    line-height: 55px;
+                    line-height: 36px;
                     padding: 0;
                     margin: 0;
+
+                    @media (min-width:$screen-md-min) {
+                        line-height: 55px;
+                    }
     
                 }
 
                 .orangeList {
                     margin-top: 5em;
                     margin-bottom: 2em;
+                    padding: 0;
 
                     @media (min-width:$screen-md-min) {
                         margin-top: 5em;
