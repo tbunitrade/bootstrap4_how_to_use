@@ -167,22 +167,27 @@
                 font-size: 36px;
                 font-weight: bold;
                 width: 100%;
+
+                @media (min-width:$screen-md-min) {
+                    max-width: 7em;
+                    margin: auto;
+                    padding-top: 2em;
+                    position: relative;
+                }               
                 
-                max-width: 7em;
-                margin: auto;
-                padding-top: 2em;
-                position: relative;
 
                 &:after {
-                    left: 0;
-                    display: block;
-                    background: #ff7c00;
-                    content: "";
-                    width: 8em;
-                    height: 2px;
-                    position: absolute;
-                    bottom: -.4em;
-                    z-index: 9;
+                    @media (min-width:$screen-md-min) {
+                        left: 0;
+                        display: block;
+                        background: #ff7c00;
+                        content: "";
+                        width: 8em;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -.4em;
+                        z-index: 9;
+                    }
                 }
             }
 
@@ -299,6 +304,12 @@
 
                 .orangeList {
                     margin-top: 5em;
+                    margin-bottom: 2em;
+
+                    @media (min-width:$screen-md-min) {
+                        margin-top: 5em;
+                        margin-bottom: 0em;
+                    }
                     
                 }
             }
@@ -314,13 +325,14 @@
                 text-align: justify;
                 text-indent: 2em;
                 /* padding: 0em 1em; */
-                width: 370px;
+                width: 100%;
+                max-width: 370px;
                 height: 150px;
                 //float: right;
                 position: relative;
                 //right: 4em;
 
-                width: 370px;
+                
                 height: 150px;
                 /* float: right; */
                 position: relative;
@@ -388,6 +400,7 @@
 
                 .item {
                     font-size: 16px;
+                    line-height: 2em;
                     font-weight: bold;
                     color: $h3span;
                     list-style-type: none;
@@ -533,7 +546,11 @@
         }
 
         .ourCert {
-            height: 438px;
+            /*height: 126px;*/
+
+            @media (min-width:$screen-md-min) { 
+                height: 438px;
+            }
         }
         /*certifications*/       
        
@@ -542,31 +559,39 @@
             background-repeat: no-repeat;
 
             .title {
-                text-align: center;
+                width: 100%;
+                text-align: left;
                 color: $white;
                 font-size: 36px;
+                line-height: 1.5em;
                 font-weight: bold;
-               
-                width: 100%;
-                max-width: 92px;
-                margin: auto;
-                padding-top: 2em;
-                position: relative;
+
+                @media (min-width:$screen-md-min) {
+                    text-align: center; 
+                    max-width: 92px;
+                    margin: auto;
+                    padding-top: 2em;
+                    position: relative;
+                    line-height: unset;
+                }
+             
+                
 
                 
 
                 &:after  {
-    
-                    left:0;
-                    display: block;
-                    background: $headerorange;
+                    @media (min-width:$screen-md-min) {
+                        left:0;
+                        display: block;
+                        background: $headerorange;
 
-                    content: "";
-                    width: 8em;
-                    height: 2px;
-                    position: absolute;
-                    bottom: -0.4em;
-                    z-index: 9;
+                        content: "";
+                        width: 8em;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -0.4em;
+                        z-index: 9;
+                    }
                 }
             }
 
@@ -616,9 +641,12 @@
 
     .ourClients { 
         position: relative;
+        padding-bottom: 6em;
         
+        @media (min-width:$screen-md-min) {
+            padding-bottom: 0em;
+        }       
         
-
         .description {
             font-size: 14px;
             line-height: 24px;
@@ -626,11 +654,10 @@
             color: $h3span;
             text-align: justify;
             text-indent: 2em;
-            width: 370px;
-            height: 150px;
-            position: relative;
-            width: 370px;
-            height: 150px;
+            width:100%;
+            max-width: 370px;
+            height: 150px;           
+                        
             position: relative;
             margin: auto;
 
@@ -659,6 +686,47 @@
     }/*ourClients*/
 }/*mainPage*/
 
+#blogCarouselSmallMore {
+    .image{
+
+        background: url(../img/li-index.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 294px;
+        height: 112px;
+        position: relative;
+ 
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        span {
+            font-size:19px;
+            color: $h3text; 
+            left: 1.1em;
+            bottom: 2.3em;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    .carousel-indicators {
+
+        li {
+            background: transparent;
+            border:2px solid $headerorange;
+            border-radius: 50%;
+            width:15px;
+            height:15px;
+        }
+        .active {
+            background:$h3text;
+            border:2px solid $h3text;
+        }
+    }
+}
+
 #blogCarouselSmall {
 
     .carousel-inner{
@@ -666,6 +734,7 @@
     }
 
     .image{
+        
         img {
             display: block;
             margin: auto;
@@ -713,15 +782,17 @@
 .certSlider {
 
     #myLayer {
-        background: url(../img/layerborder.png);
-        background-repeat: no-repeat; 
-        /*background-size: contain;   */
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 26em;
-        left: -4em;
-        top:0.7em;
+        @media (min-width:$screen-md-min) {
+            background: url(../img/layerborder.png);
+            background-repeat: no-repeat; 
+            /*background-size: contain;   */
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 26em;
+            left: -4em;
+            top:0.7em;
+        }        
     }
 }
 
