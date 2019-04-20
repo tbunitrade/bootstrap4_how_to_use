@@ -1,0 +1,734 @@
+.mainPage {
+
+    .contentWrap {
+        margin: 4em 0em;
+
+        .h1style{
+            font-size: 50px;
+            font-weight: bold;
+            
+            color: $h3span;
+            text-align: center;
+
+            span {
+                color: $h3text;
+            }
+        }
+
+        .alexBlock {
+            height:450px;
+
+            h1 {
+                position: absolute;            
+                background: $white;
+                width: 250px;
+                height: 67px;
+                left: 2em;
+                top:1em;
+            }
+
+            .description {
+                padding-top: 50px;
+                padding-bottom: 50px; 
+                width: 100%;
+                max-width: 430px;
+                padding: 3em;
+                height: 260px;
+                margin: auto;
+
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: normal;
+                color: $h3span;
+                text-align: justify;
+                text-indent: 2em;
+                margin-top: 6em;
+                padding-top: 4em;
+                border: 2px solid $bordercolor;
+                border-radius: 11px;
+            }
+        }/*alexblock*/
+
+        .centuryBlock {
+            padding-top: 50px;
+            padding-bottom: 50px; 
+            height: 400px;
+
+            .centuryItems {
+                padding: 0;
+                margin: 0;
+
+                .item {
+                    list-style-type: none;
+                    width: 250px;                    
+                    width: 100%;
+                    height: 77px;
+                    display: inline-block;
+
+                    @media (min-width:$screen-md-min) {
+                        width: 47%;
+                    }
+
+                    a{
+                        font-size: 18px;
+                        height: 60px;
+                        line-height: 31px;
+                        font-weight: bold;
+                        color: $h3span;
+                        position: relative;
+                        //position: relative;
+                        padding-left: 4em;
+                        padding-top: 2em;
+                        display: block;
+
+                        &:before {
+                            background: url(../img/header-icons.png);
+                            width: 78px;
+                            height: 59px;
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            left: 0.1em;
+                            top:1em;
+                        }
+                    }
+                }
+            }            
+        }/*centuryBlock*/
+
+        .mainService {
+            width: 100%;
+            height: 128px;
+            background: url(../img/calculator-grey.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+         
+            @media (min-width:$screen-md-min) {
+                height: 398px;
+                height: 435px;
+            }
+
+            .makeOrder {
+                border: 2px solid #8cd6ad;
+                
+                line-height: 40px;
+                color: $white;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 700;
+                
+             
+                font-family: 'PT Sans';
+                width: 100%;
+                max-width: 230px;
+                height: 40px;
+                display: block;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                top:30px;
+
+                &:before {
+                    display: block;
+                    width: 5px;
+                    height: 6px;
+                    content: "";
+                    background: transparent;
+                    position: absolute;
+                    left: -2%;
+                    top: 44%;
+                    background: url(../img/makeorder.png);
+                }
+ 
+                &:after {
+                    display: block;
+                    width: 5px;
+                    height: 6px;
+                    content: "";
+                    background: url(../img/makeorder.png);
+                    position: absolute;
+                    right: -2%;
+                    top: 44%;
+                }
+            }
+
+            .h2style {
+                color:$white;
+                font-size: 36px;
+                line-height: 36px;
+                font-weight: bold;
+                text-align: center;
+
+            }
+
+            .title {
+                text-align: center;
+                color: #fff;
+                font-size: 36px;
+                font-weight: bold;
+                width: 100%;
+                
+                max-width: 7em;
+                margin: auto;
+                padding-top: 2em;
+                position: relative;
+
+                &:after {
+                    left: 0;
+                    display: block;
+                    background: #ff7c00;
+                    content: "";
+                    width: 8em;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -.4em;
+                    z-index: 9;
+                }
+            }
+
+            .makeOrder {
+                display: none;
+
+                @media (min-width:$screen-md-min) {
+                    display: block;
+                }
+            }
+
+        }/*mainService*/
+
+        .freeConsult {
+            .ulConsult {
+                display: none;
+                padding: 0;
+                margin: 0;
+
+                @media (min-width:$screen-md-min) {
+                    display: block;                    
+                    z-index: 3;
+                    position: relative;                
+                }
+
+                .item {
+                    display: inline-block;
+                    vertical-align: top;
+                    width:32%;
+                    padding-top: 8em;
+
+                    a {
+                        position: relative;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        
+                        
+                        color:$h3span;
+
+                        display: block;
+                        
+                        margin: auto;
+                        width: 100%;
+                        max-width: 160px;
+
+                        &:before {
+                            background: url(../img/header-icons.png);
+                            width: 78px;
+                            height: 59px;
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            left: 22%;
+                            top:-4em;
+                        }
+
+                        
+                    }
+
+                    .span {
+                        font-size:14px;
+                        display: inline-block;
+                        font-weight: normal;
+                        text-align: justify;
+                        margin: 2em;
+                    }
+                }
+            }
+
+            .sliderConsult {
+                display: block;
+                height: 271px;
+
+                @media (min-width:$screen-md-min) {
+                    display: none;
+                }
+
+                .carousel-indicators {
+                    bottom: 0;
+                }
+            }
+        
+        }/*freeConsult*/
+
+        .collaboration {
+
+            form {
+
+                @media (min-width:$screen-md-min) {
+                    margin-left: 2.5em;
+                    margin-top: 2.5em;
+                }                
+            }
+
+            .wrapBorder {
+                position: relative;
+                border: 2px solid #e9e9ed;
+                border-radius: 11px;
+                margin-top:3em;
+
+                .h3Style {
+                    position: absolute;
+                    background: $white;
+    
+                    top: -5px;
+                    left: -7px;
+                    height: 84px;
+                    line-height: 55px;
+                    padding: 0;
+                    margin: 0;
+    
+                }
+
+                .orangeList {
+                    margin-top: 5em;
+                    
+                }
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: normal;
+                color: $h3span;
+                
+
+                
+                text-align: justify;
+                text-indent: 2em;
+                /* padding: 0em 1em; */
+                width: 370px;
+                height: 150px;
+                //float: right;
+                position: relative;
+                //right: 4em;
+
+                width: 370px;
+                height: 150px;
+                /* float: right; */
+                position: relative;
+                /* right: 0; */
+                margin: auto;
+            }
+
+            .ulToDo {
+                padding: 0;
+                margin: 0;
+
+                
+                /* float: right; */
+                position: relative;
+                /* right: 0; */
+                margin: auto;
+                width: 100%;
+                max-width: 416px;
+                height: 270px;
+
+                .item {
+                    list-style-type: none;
+                    width: 250px;
+                    
+                    width: 100%;
+                    height: 77px;
+                    
+                    display: inline-block;
+                    position: relative;
+                    left: 0em;
+
+                    a{
+                        font-size: 18px;
+                        height: 60px;
+                        line-height: 31px;
+                        font-weight: bold;
+                        color: $h3span;
+                        position: relative;
+                        //position: relative;
+                        padding-left: 4em;
+                        padding-top: 2em;
+                        display: block;
+
+                       
+
+                        &:before {
+                            background: url(../img/header-icons.png);
+                            width: 78px;
+                            height: 59px;
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            left: 0.1em;
+                            top:1em;
+
+                           
+                        }
+                    }
+                }
+            }/**/
+
+            .orangeList {
+                /*padding: 0;*/
+                margin: 0;
+
+                .item {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $h3span;
+                    list-style-type: none;
+                    position: relative;
+                    padding-left: 1em;
+
+                    @media (min-width:$screen-md-min) {
+                        font-size: 20px;
+                        line-height: 48px;
+                    }
+
+                    span {
+                        color: $headerorange;
+                    }
+                    
+
+                    &:before {
+                        content: "";
+                        background: url(../img/li-poiner.png);
+                        width: 11px;
+                        height: 11px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top:0;
+                        position: absolute;
+                        left: 0;
+                        top: 39%;
+                    }
+
+                }
+            }
+
+        }/*collaboration*/
+
+        .partnership {
+
+            .uLpartnership{
+
+                display: none;
+
+                @media (min-width:$screen-md-min) {
+                    display: block;
+                    background: url(../img/sliderLayer.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    max-width: 1210px;
+                    height: 529px;
+                    margin: auto;
+                }
+
+                .item {
+                    width: 33%;
+                    display: inline-block;
+                    vertical-align: top;
+                   
+                    max-width: 400px;
+                    height: 250px;
+                    position: relative;
+
+                    .description {
+                        position: absolute;
+                        left: 0;
+                        top: 4em;
+                        padding: 2.5em 2.5em 2.5em 0;
+                        
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $h3span; 
+                    }
+
+                    &:first-child {
+                        position: relative;
+                            &:before {
+                            content: "1";
+                            position: absolute;
+                            top:1.55em;
+                            left:-0.5em;
+                            color: $h3text;
+                            font-size: 30px;
+                            line-height: 30px;
+                            display: block;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        position: relative;
+                        &:before {
+                            content: "2";
+                            position: absolute;
+                            top:1.55em;
+                            left:-0.3em;
+                            color: $h3text;
+                            font-size: 30px;
+                            line-height: 30px;
+                            display: block;
+                        }                       
+                    }
+
+                    &:nth-child(3) {
+                        position: relative;
+                        &:before {
+                            content: "3";
+                            position: absolute;
+                            top:1.55em;
+                            left:0;
+                            color: $h3text;
+                            font-size: 30px;
+                            line-height: 30px;
+                            display: block;
+                        }                       
+                    }
+
+                    &:nth-child(5) {
+                        position: relative;
+                        &:before {
+                            content: "5";
+                            position: absolute;
+                            top:1.55em;
+                            left:-0.2em;
+                            color: $h3text;
+                            font-size: 30px;
+                            line-height: 30px;
+                            display: block;
+                        }                       
+                    }
+                    &:nth-child(6) {
+                        position: relative;
+                        &:before {
+                            content: "6";
+                            position: absolute;
+                            top:1.55em;
+                            left:0.1em;;
+                            color: $h3text;
+                            font-size: 30px;
+                            line-height: 30px;
+                            display: block;
+                        }                       
+                    }
+                }
+            }
+        }
+
+        .ourCert {
+            height: 438px;
+        }
+        /*certifications*/       
+       
+        .ourCertLeft {
+            background: url(../img/calculator-grey.png);
+            background-repeat: no-repeat;
+
+            .title {
+                text-align: center;
+                color: $white;
+                font-size: 36px;
+                font-weight: bold;
+               
+                width: 100%;
+                max-width: 92px;
+                margin: auto;
+                padding-top: 2em;
+                position: relative;
+
+                
+
+                &:after  {
+    
+                    left:0;
+                    display: block;
+                    background: $headerorange;
+
+                    content: "";
+                    width: 8em;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -0.4em;
+                    z-index: 9;
+                }
+            }
+
+            
+
+            .carousel-indicators {
+                bottom:11em;
+            }
+        }
+
+        .ourCert {
+            .carousel-inner {
+                margin-top: 6em;
+                position: relative;
+                z-index: 1;
+
+                .carousel-item {
+                    position: relative;
+                    z-index: 2;
+                }
+                
+                &:before {
+                    content:"";
+                    display: block;
+                    width: 200%;
+                    position: absolute;
+                    height: 340px;
+                    left: -5em;
+                    top: -3em;
+                    z-index: 0;
+                    background: white;
+                }
+
+                &:after {
+                    border:2px solid $h3text;
+                    border-radius: 10px 0px 0px 10px;
+                    height: 540px;
+                    left: -4em;
+                    top: -3em;
+                    z-index: 0;
+                   
+                }
+            }
+        }
+    }/*contentWrap*/
+
+
+    .ourClients { 
+        position: relative;
+        
+        
+
+        .description {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $h3span;
+            text-align: justify;
+            text-indent: 2em;
+            width: 370px;
+            height: 150px;
+            position: relative;
+            width: 370px;
+            height: 150px;
+            position: relative;
+            margin: auto;
+
+            .name {
+                display: block;
+                width: 100%;
+                font-weight: bold;
+                font-size: 16px;
+                color:$headerorange;
+                padding: 0;
+                margin: 0;
+                text-indent: 0;
+
+                span {
+                    float: right;
+                    color: $h3text;
+                    font-size:14px;
+                }
+            }
+            
+           
+            
+        }
+
+        
+    }/*ourClients*/
+}/*mainPage*/
+
+#blogCarouselSmall {
+
+    .carousel-inner{
+        height: 295px;
+    }
+
+    .image{
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: $h3span;
+        font-size: 18px;
+        
+        margin: auto;
+        width: 100%;
+        max-width: 149px;
+        text-align: center;
+        padding-bottom: 1em;
+        position: relative;
+
+        &:after {
+            width: 70px;
+            height: 2px;
+            background: $h3text;
+            content: "";
+            display: block;
+            text-align: center;
+            left: 25%;
+            bottom:0;
+            position: absolute;
+        }
+    }
+
+    .description {
+        width: 178px;
+        height: 85px;
+        text-align: justify;
+        margin: auto;
+        display: block;
+        padding: 1em 0em;
+    }
+    
+}
+
+.certSlider {
+
+    #myLayer {
+        background: url(../img/layerborder.png);
+        background-repeat: no-repeat; 
+        /*background-size: contain;   */
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 26em;
+        left: -4em;
+        top:0.7em;
+    }
+}
+
+#blogCarouselSmallMore {
+    display: block;
+
+    @media (min-width:$screen-sm-min) {
+        display: none;
+    }
+}

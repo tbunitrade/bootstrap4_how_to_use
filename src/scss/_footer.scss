@@ -5,13 +5,27 @@
         
     }
 
+    .logoMobile {
+        @media (min-width:$screen-md-min) {
+            display: none;
+        }
+    }
+
     .logo {
         background: $headerorange;        
-        
-        @media (min-width:$screen-md-min) {
-            display: block;
+        display: block;
+
+        .logoHref {
+
         }
 
+        @media (min-width:$screen-md-min) {
+          
+
+            .logoHref {
+                display: none;
+            }
+        }
 
         .slogan {
             display: block;

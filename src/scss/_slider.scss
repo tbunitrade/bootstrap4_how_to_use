@@ -1,0 +1,81 @@
+.carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.carousel-indicators .active {
+background: #707070;
+}
+.indicatorsNext,
+.navigationWrap {
+    background:url(../img/navigation-indicator.png);
+    background-repeat: no-repeat;
+    position: absolute;
+  
+   
+    width: 77px;
+    height: 45px;
+    padding: 0;
+
+    span {
+
+        i {
+            font-size: 16px;
+            padding: 10px;
+            &:hover {
+                color: $h3text;
+            }
+        }
+    }
+}
+
+.navigationWrap {
+    bottom: -3em;
+    left: 0;
+}
+
+
+.indicatorsNext {
+    right:0;            
+    bottom: 0!important;
+    right: 11em;
+
+    span {
+        i {
+            padding: 14px;
+        }
+    }
+} 
+
+.btn-vertical-slider-next {
+    position: relative;
+    &:before {
+        height: 22px;
+        width: 1px;
+        background: black;
+        position: absolute;
+        left: 0%;
+        top: 1%;
+        content: "";
+
+    }
+}
+
+#blogCarouselNext {
+    .carousel-inner {
+
+        .col-md-4{
+           margin: 0.3em 1em;
+        }
+    }
+}
