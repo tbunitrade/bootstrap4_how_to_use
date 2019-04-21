@@ -418,31 +418,26 @@
                     Наши 
                     сертификаты
 
-                    <ol class=" navigationWrap">
-                            <!-- <li data-target="#blogCarouselCert" data-slide-to="0" class="active"></li>
-                            <li data-target="#blogCarouselCert" data-slide-to="1"></li> -->
-        
-                            <span data-slide="prev" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-down"><i class="fas fa-caret-left"></i></span>
-                            <span data-slide="next" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-up "><i class="fas fa-caret-right"></i></span>
-        
-                                <script>
-                                $(document).ready(function () {
-        
-                                    $('.btn-vertical-slider').on('click', function () {
-                                        
-                                        if ($(this).attr('data-slide') == 'next') {
-                                            $('#blogCarouselCert').carousel('next');
-                                        }
-                                        if ($(this).attr('data-slide') == 'prev') {
-                                            $('#blogCarouselCert').carousel('prev')
-                                        }
-        
-                                    });
+                    <ol class=" navigationWrap">                           
+                        <span data-slide="prev" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-down"><i class="fas fa-caret-left"></i></span>
+                        <span data-slide="next" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-up "><i class="fas fa-caret-right"></i></span>
+                        <script>
+                            $(document).ready(function () {
+
+                                $('.btn-vertical-slider').on('click', function () {
+                                    
+                                    if ($(this).attr('data-slide') == 'next') {
+                                        $('#blogCarouselCert').carousel('next');
+                                    }
+                                    if ($(this).attr('data-slide') == 'prev') {
+                                        $('#blogCarouselCert').carousel('prev')
+                                    }
+
                                 });
-                                </script>
-                        </ol>
-                </div>
-                
+                            });
+                        </script>
+                    </ol>
+                </div>                
             </div>
             <div class="col-md-6 ourCert certSlider">
                 <div id="myLayer" class="myLayer"></div>
