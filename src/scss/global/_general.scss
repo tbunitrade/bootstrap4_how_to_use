@@ -60,12 +60,49 @@ a {
     font-size: 50px;
     line-height: 50px;
     padding: none;
+
+    z-index: 3;
+    position: relative;
   }
 
   span {
     color: $h3span;
   }  
 }
+
+.greyBg {
+
+}
+
+@media (min-width:$screen-md-min) {
+  .greyBg {
+    background: $f5color;
+    z-index: 0;
+  
+    &:before {
+        position: absolute;
+        left: -100%;
+        top:0;
+        width: 100%;
+        height: 100%;;
+        background: $f5color;
+        content: "";
+    }
+  
+    &:after {
+        position: absolute;
+        
+        right: -5em;
+        top:0;
+        width: 100%;
+        height: 100%;;
+        background: $f5color;
+        content: "";
+        z-index: -1;
+    }
+  }
+}
+
 
 .detailsPage {
   .titleOfRoW {

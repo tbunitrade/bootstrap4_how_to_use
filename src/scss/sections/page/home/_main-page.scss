@@ -1,4 +1,17 @@
 .mainPage {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        background: url(../img/decor-background.png);
+        background-repeat: no-repeat;
+        width: 1920px;
+        height: 734px;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
 
     .contentWrap {
         margin: 4em 0em;
@@ -227,7 +240,12 @@
                     display: inline-block;
                     vertical-align: top;
                     width:32%;
+                    
                     padding-top: 8em;
+
+                    @media (min-width:$screen-md-min) {
+                        width: 24%;
+                    }
 
                     a {
                         position: relative;
@@ -295,15 +313,20 @@
 
             .wrapBorder {
                 position: relative;
-                border: 2px solid #e9e9ed;
-                border-radius: 11px;
                 margin-top:3em;
+
+                @media (min-width:$screen-md-min) {
+                    border: 2px solid $formborder;
+                    border-radius: 11px;                   
+                }
+             
 
                 .h3Style {
                     position: absolute;
                     background: $white;
     
                     top: -5px;
+                    top: -86px;
                     left: -7px;
                     height: 84px;
                     line-height: 36px;
@@ -322,6 +345,7 @@
                     padding: 0;
 
                     @media (min-width:$screen-md-min) {
+                        padding: 0em 0em 0em 2.5em;
                         margin-top: 5em;
                         margin-bottom: 0em;
                     }
@@ -622,6 +646,11 @@
                 margin-top: 6em;
                 position: relative;
                 z-index: 1;
+                
+                @media (min-width:$screen-md-min) {
+                    width: 62%;
+                }
+                
 
                 .carousel-item {
                     position: relative;
@@ -653,13 +682,25 @@
         }
     }/*contentWrap*/
 
-
+    
     .ourClients { 
         position: relative;
         padding-bottom: 6em;
+
+        // &:before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     left: 0;
+        //     top:0;
+        //     background: url(../img/decor-small2-background.png);
+        //     background-repeat: no-repeat;
+        //     width: 943px;
+        //     height: 514px;
+        // }
         
         @media (min-width:$screen-md-min) {
-            padding-bottom: 0em;
+            padding-bottom: 3em;
         }       
         
         .description {
@@ -699,6 +740,21 @@
 
         
     }/*ourClients*/
+
+    .ourClientsGrey {
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top:0;
+            background: url(../img/decor-small2-background.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 514px;
+        }
+
+    }
 }/*mainPage*/
 
 #blogCarouselSmallMore {
@@ -719,10 +775,14 @@
         span {
             font-size:19px;
             color: $h3text; 
-            left: 1.1em;
+            left:  -0.5em;
             bottom: 2.3em;
             position: absolute;
             z-index: 1;
+
+            @media (min-width:$screen-md-min) {
+                left: 1.1em;
+            }
         }
     }
 
@@ -748,6 +808,24 @@
         height: 295px;
     }
 
+    .carousel-indicators {
+        position: relative;
+        top: 0.5em;
+    
+        .active {
+            background: #8cd6ad;
+            border: 2px solid #8cd6ad;
+        }
+
+        li {
+            background: 0 0;
+            border: 2px solid #ff7c00;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
     .image{
         
         img {
@@ -762,6 +840,7 @@
         font-weight: bold;
         color: $h3span;
         font-size: 18px;
+        text-indent: 0;
         
         margin: auto;
         width: 100%;

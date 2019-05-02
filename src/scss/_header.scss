@@ -290,9 +290,25 @@
         a {
             color:$h3span;
             text-align: right;
-            position: absolute;            
+            position: absolute; 
+            font-size: 17px;
+            color: $h3span;
+            font-weight: bold;           
             right: 10px;
             bottom: 30px;
+
+            &::before {
+                content:"";
+                background: url(../img/header-email.png);
+                background-repeat: no-repeat;
+                width: 74px;
+                height: 45px;
+                display: block;
+                z-index: 0;
+                position: absolute;
+                right:  0;
+                top:0;
+            }
         }       
     }    
 }/*end of second line*/

@@ -1,5 +1,6 @@
 .footer {
-    height: 170px;    
+    height: 170px;
+    margin: 0;    
 
     @media (min-width:$screen-md-min) {
         
@@ -41,6 +42,15 @@
 
     .data {
         background: $h3span;
+
+        .row {
+            margin: 0;
+        }
+
+        .widgetInFooter {
+            position: relative;
+            top: 2em;
+        }
     }
 
     .itemEmail {
@@ -54,7 +64,7 @@
         .email {
             position: relative;
             padding: 20px;
-            top:3em;
+            top:            0.5em;
 
             &:before {
                 content: "";
@@ -102,8 +112,9 @@
            
 
             position: relative;
-            left: -2em;
-            top:2em;
+            
+            left: -2.5em;
+            top: 0;
 
             &:hover {
                 background: url(../img/social-hover.png);
