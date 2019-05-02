@@ -110,6 +110,13 @@ button {
         right: -2%;
         top: 40%;
     }
+
+    @media (min-width:$screen-md-min) {
+        margin: 0;
+        float: right;
+        margin-right: 3em;
+        margin-top: 0.4em;
+    }
 }
 
 form {

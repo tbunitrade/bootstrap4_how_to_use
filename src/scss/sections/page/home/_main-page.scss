@@ -18,18 +18,37 @@
 
         .h1style{
             font-size: 50px;
-            font-weight: bold;
-            
+            font-weight: bold;            
             color: $h3span;
             text-align: center;
+            position: relative;
+           
 
             span {
                 color: $h3text;
+            }
+
+            @media (min-width:$screen-md-min) { 
+                text-align: left;
+                left: -1.3em;
+                top: -1.2em;
+
+                span { 
+                    font-size: 60px;
+                }
+
+                b {
+                    display: none;
+                }
             }
         }
 
         .alexBlock {
             height:450px;
+            
+            @media (min-width:$screen-md-min) {
+                height: 319px;
+            }
 
             h1 {
                 position: absolute;            
@@ -40,9 +59,10 @@
               
 
                 @media (min-width:$screen-md-min) {
-                    margin:unset;
-                    left: 2em;
-                    top:1em;
+                    margin: unset;
+                    left: 5.8em;
+                    top: 0.5em;
+                    z-index: 2;
                 }
             }
 
@@ -61,13 +81,19 @@
                 color: $h3span;
                 text-align: justify;
                 text-indent: 2em;
-                margin-top: 6em;
+                position: relative;
+                top: 6em;
+                left: 0;
                 padding-top: 4em;
                 border: 2px solid $bordercolor;
                 border-radius: 11px;
 
                 @media (min-width:$screen-md-min) {
-                    padding: 3em;
+                    padding: 3.7em 3em 0em 3em;
+                    top: 2.6em;
+                    left: 6em;
+                    height: 267px;
+                    line-height:1.72em;
                 }
             }
         }/*alexblock*/
@@ -77,9 +103,23 @@
             padding-bottom: 50px; 
             height: 400px;
 
+            @media (min-width:$screen-md-min) {
+                height: 320px;
+            }
+
+            .h1style{
+                text-transform: initial;
+            }
+
             .centuryItems {
                 padding: 0;
                 margin: 0;
+                position: relative;
+
+                @media (min-width:$screen-md-min) { 
+                    left: -5em;
+                    top: -3.6em;                
+                }
 
                 .item {
                     list-style-type: none;
@@ -87,9 +127,15 @@
                     width: 100%;
                     height: 77px;
                     display: inline-block;
+                    vertical-align: top;
 
                     @media (min-width:$screen-md-min) {
-                        width: 47%;
+                        width: 47%;                        
+                    }
+
+                    @media (min-width:$screen-lg-min) {
+                        width: 34%;
+                        height: 92px;
                     }
 
                     a{
@@ -114,6 +160,10 @@
                             left: 0.1em;
                             top:1em;
                         }
+
+                        @media (min-width:$screen-md-min) {
+                            line-height: 18px;
+                        }
                     }
                 }
             }            
@@ -129,6 +179,7 @@
             @media (min-width:$screen-md-min) {
                 height: 398px;
                 height: 435px;
+                height: 399px;
             }
 
             .makeOrder {
@@ -173,6 +224,12 @@
                     right: -2%;
                     top: 44%;
                 }
+
+                @media (min-width:$screen-md-min) {
+                    display: block;
+                    top: 4.8em;
+                    left: 2.4em;
+                }
             }
 
             .h2style {
@@ -195,7 +252,10 @@
                     max-width: 7em;
                     margin: auto;
                     padding-top: 2em;
-                    position: relative;
+                    padding-top: 2.6em;
+                    position: relative;    
+                    left: 1.4em;
+                    line-height: 1.1em;
                 }               
                 
 
@@ -233,7 +293,9 @@
                 @media (min-width:$screen-md-min) {
                     display: block;                    
                     z-index: 3;
-                    position: relative;                
+                    position: relative;                     
+                    top: 2em;
+                    left: -5.4em;
                 }
 
                 .item {
@@ -303,40 +365,45 @@
 
         .collaboration {
 
+            .h3Style {
+
+                @media (min-width:$screen-md-min) {
+                    line-height: 55px;
+                    text-align: center!important;
+                }
+            }
+
             form {
 
                 @media (min-width:$screen-md-min) {
                     margin-left: 2.5em;
-                    margin-top: 2.5em;
+                    margin-top: 0.5em;
                 }                
             }
 
             .wrapBorder {
                 position: relative;
-                margin-top:3em;
+                top:3em;
 
                 @media (min-width:$screen-md-min) {
-                    border: 2px solid $formborder;
+                    border: 2px solid $formborder;                    
                     border-radius: 11px;                   
+                    top: 2em;
+                    left: -2em;
+                    width: 38em;
+                    padding-bottom: 3em;
                 }
              
 
                 .h3Style {
                     position: absolute;
-                    background: $white;
-    
-                    top: -5px;
-                    top: -86px;
-                    left: -7px;
+                    background: $white;                        
+                    top: -0.5em;
+                    left: -0.7em;
                     height: 84px;
                     line-height: 36px;
                     padding: 0;
-                    margin: 0;
-
-                    @media (min-width:$screen-md-min) {
-                        line-height: 55px;
-                    }
-    
+                    margin: 0;                    
                 }
 
                 .orangeList {
@@ -346,7 +413,7 @@
 
                     @media (min-width:$screen-md-min) {
                         padding: 0em 0em 0em 2.5em;
-                        margin-top: 5em;
+                        margin-top: 3em;
                         margin-bottom: 0em;
                     }
                     
@@ -358,48 +425,41 @@
                 line-height: 24px;
                 font-weight: normal;
                 color: $h3span;
-                
-
-                
                 text-align: justify;
                 text-indent: 2em;
-                /* padding: 0em 1em; */
                 width: 100%;
                 max-width: 370px;
-                height: 150px;
-                //float: right;
+                height: 150px;                
                 position: relative;
-                //right: 4em;
-
-                
-                height: 150px;
-                /* float: right; */
-                position: relative;
-                /* right: 0; */
+                height: 150px;                
                 margin: auto;
+
+                @media (min-width:$screen-md-min) {                
+                    top: -5em;
+                    left: 8em;
+                }
             }
 
             .ulToDo {
                 padding: 0;
-                margin: 0;
-
-                
-                /* float: right; */
-                position: relative;
-                /* right: 0; */
+                margin: 0;              
+                position: relative;                
                 margin: auto;
                 width: 100%;
                 max-width: 416px;
                 height: 270px;
 
+                @media (min-width:$screen-md-min) {    
+                    left: 7.4em;
+                    top: -5em;
+                }
+
                 .item {
-                    list-style-type: none;
-                    width: 250px;
-                    
+                    list-style-type: none;                    
                     width: 100%;
-                    height: 77px;
-                    
+                    height: 77px;                    
                     display: inline-block;
+                    vertical-align: top;
                     position: relative;
                     left: 0em;
 
@@ -475,7 +535,27 @@
 
         }/*collaboration*/
 
+        .leftCollaboration {
+
+            .h3Style {
+
+                @media (min-width:$screen-md-min) {
+                    position: relative;
+                    top:-1em;
+                }
+            }
+        }
+
         .partnership {
+
+            .h3Style {
+
+                @media (min-width:$screen-md-min) {
+                    left: 5.3em;
+                    top: -2em;
+                    display: inline-block;
+                }
+            }
 
             .uLpartnership{
 
@@ -490,6 +570,10 @@
                     max-width: 1210px;
                     height: 529px;
                     margin: auto;
+
+                    position: relative;
+                    top: -9em;
+                    left: -3em;
                 }
 
                 .item {
@@ -757,6 +841,10 @@
     }
 }/*mainPage*/
 
+.marginZero {
+    margin: 0!important;  
+} 
+
 #blogCarouselSmallMore {
     .image{
 
@@ -876,17 +964,24 @@
 .certSlider {
 
     #myLayer {
+
         @media (min-width:$screen-md-min) {
             background: url(../img/layerborder.png);
             background-repeat: no-repeat; 
-            /*background-size: contain;   */
+            
             position: absolute;
             z-index: 1;
             width: 100%;
             height: 26em;
             left: -4em;
             top:0.7em;
-        }        
+
+        
+        }  
+        
+        @media (min-width:$screen-lg-min) {
+            left: -10em;
+        }
     }
 }
 
