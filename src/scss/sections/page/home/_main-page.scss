@@ -6,7 +6,8 @@
         display: block;
         background: url(../img/decor-background.png);
         background-repeat: no-repeat;
-        width: 1920px;
+        width: 100%;
+        max-width: 1920px;
         height: 734px;
         position: absolute;
         top:0;
@@ -46,19 +47,22 @@
         .alexBlock {
             height:450px;
             
-            @media (min-width:$screen-md-min) {
+            @media (min-width:$screen-lg-min) {
                 height: 319px;
             }
 
             h1 {
-                position: absolute;            
+                position: relative; 
                 background: $white;
                 width: 250px;
                 height: 67px;
                 margin:auto;
+                top: 0.5em;
               
 
-                @media (min-width:$screen-md-min) {
+                @media (min-width:$screen-lg-min) {
+
+                    position: absolute;            
                     margin: unset;
                     left: 5.8em;
                     top: 0.5em;
@@ -88,7 +92,7 @@
                 border: 2px solid $bordercolor;
                 border-radius: 11px;
 
-                @media (min-width:$screen-md-min) {
+                @media (min-width:$screen-lg-min) {
                     padding: 3.7em 3em 0em 3em;
                     top: 2.6em;
                     left: 6em;
@@ -103,7 +107,7 @@
             padding-bottom: 50px; 
             height: 400px;
 
-            @media (min-width:$screen-md-min) {
+            @media (min-width:$screen-lg-min) {
                 height: 320px;
             }
 
@@ -116,7 +120,7 @@
                 margin: 0;
                 position: relative;
 
-                @media (min-width:$screen-md-min) { 
+                @media (min-width:$screen-lg-min) { 
                     left: -5em;
                     top: -3.6em;                
                 }
@@ -161,7 +165,7 @@
                             top:1em;
                         }
 
-                        @media (min-width:$screen-md-min) {
+                        @media (min-width:$screen-lg-min) {
                             line-height: 18px;
                         }
                     }

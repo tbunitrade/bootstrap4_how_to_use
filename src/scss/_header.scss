@@ -27,7 +27,7 @@
             height: 60px;
             display: block;
 
-            @media (min-width:$screen-md-min) {
+            @media (min-width:$screen-lg-min) {
                 display: block;
                 background-image: url("../img/logo-big.png");
                 position: absolute;             
@@ -278,7 +278,7 @@
 .secondLine {
     display: none;
 
-    @media (min-width:$screen-md-min){        
+    @media (min-width:$screen-lg-min){        
         display: flex;
     }
 
